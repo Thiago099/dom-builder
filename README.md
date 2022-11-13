@@ -18,6 +18,7 @@ the element method returns a class that uses the builder design pattern to modif
 ![image](https://user-images.githubusercontent.com/66787043/201551233-56420343-f21a-492a-9bdf-e04bf64c54cf.png)
 
 ```js
+import { element, effect } from "@thiago-kaique/doom-builder";
 element("h1")
     .html("Hello world")
     .parent(document.body)
@@ -29,6 +30,7 @@ element("h1")
 ![image](https://user-images.githubusercontent.com/66787043/201551278-6213c798-9f1a-421c-89ab-c805866e9211.png)
 
 ```js
+import { element, effect } from "@thiago-kaique/doom-builder";
 export default function CounterButton()
 {
     const data = effect({count: 0})
