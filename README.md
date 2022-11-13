@@ -11,13 +11,19 @@ element is used to create html elements and effect creates a object to enable re
 
 the element method returns a class that uses the builder design pattern to modify the html element
 
-```js
-const main = element("div")
-    .class("main")
-    .parent(document.body)
+## Examples
+ 
+ ### Create a basic element
 
+![image](https://user-images.githubusercontent.com/66787043/201551233-56420343-f21a-492a-9bdf-e04bf64c54cf.png)
+
+```js
 element("h1")
     .html("Hello world")
-    .parent(main)
+    .parent(document.body)
     .class("title")
 ```
+
+### A button component with a number that increment once you've clicked it
+
+![image](https://user-images.githubusercontent.com/66787043/201551278-6213c798-9f1a-421c-89ab-c805866e9211.png)
