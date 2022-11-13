@@ -46,3 +46,32 @@ export default function CounterButton()
     return main
 }
 ```
+
+### A title that is in sync with the contents of a input
+
+![image](https://user-images.githubusercontent.com/66787043/201551381-0963022e-66d9-46d7-a241-7f4a0560b3fb.png)
+
+
+import { element, effect } from "@thiago-kaique/doom-builder";
+export default function EditableTitle(text = "Hello world")
+{
+    const data = effect({text})
+
+    const main = element("div")
+        .class("card")
+
+    element("h3")
+        .effect(data)
+        .html(()=>data.text)
+        .parent(main)
+
+    element("input")
+        .parent(main)
+        .effect(data)
+        .model( 
+            () => data.text, 
+            (value) => data.text = value
+        )
+
+    return main
+}
