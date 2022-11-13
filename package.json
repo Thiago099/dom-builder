@@ -1,0 +1,19 @@
+{
+  "name": "@thiago-kaique/doom-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "doom-builder.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thiago099/doom-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thiago099/doom-builder/issues"
+  },
+  "homepage": "https://github.com/Thiago099/doom-builder#readme",
+  "dependencies": {
+    "observable-slim": "^0.1.6"
+  }
+}
