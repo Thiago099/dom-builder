@@ -51,7 +51,7 @@ export default function CounterButton()
 
 ![image](https://user-images.githubusercontent.com/66787043/201551381-0963022e-66d9-46d7-a241-7f4a0560b3fb.png)
 
-
+``` js
 import { element, effect } from "@thiago-kaique/doom-builder";
 export default function EditableTitle(text = "Hello world")
 {
@@ -75,3 +75,4 @@ export default function EditableTitle(text = "Hello world")
 
     return main
 }
+```
