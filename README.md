@@ -27,3 +27,20 @@ element("h1")
 ### A button component with a number that increment once you've clicked it
 
 ![image](https://user-images.githubusercontent.com/66787043/201551278-6213c798-9f1a-421c-89ab-c805866e9211.png)
+
+```js
+export default function CounterButton()
+{
+    const data = effect({count: 0})
+    const main = element("div")
+        .class("block")
+
+     element("button")
+        .effect(data)
+        .html(() => `Count is: ${data.count}`)
+        .event("click", e => data.count++)
+        .parent(main)
+    
+    return main
+}
+```
