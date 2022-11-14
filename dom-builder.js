@@ -74,14 +74,31 @@ class el{
 
     class(name, value = true)
     {
+        if(this.#isReactive(name))
+        {
+            var previous = this.#handleFunction(name)
+        }
         this.#handleEffect(this.#isReactive(name,value),()=>{
-            if(this.#handleFunction(value))
+            const classes = this.#handleFunction(name)
+            if(classes)
             {
-                this.element.classList.add(...(this.#handleFunction(name).split(" ")));
-            }
-            else
-            {
-                this.element.classList.remove(...(this.#handleFunction(name).split(" ")));
+                if(this.#handleFunction(value))
+                {
+                    if(this.#isReactive(name))
+                    {
+                        if(previous)
+                        {
+                            this.element.classList.remove(...((previous).split(" ")))
+                        }
+                        previous = classes
+                    }
+                    this.element.classList.add(...((classes).split(" ")));
+                }
+                else
+                {
+                    this.element.classList.remove(...((classes).split(" ")));
+                    previous = null
+                }
             }
         })
         return this
@@ -95,6 +112,32 @@ class el{
         else
         {
             object.appendChild(this.element);
+        }
+        return this
+    }
+    parentBefore(object)
+    {
+        if(object.element !== undefined)
+        {
+            if(object.element.firstChild)
+            {
+                object.element.insertBefore(this.element, object.element.firstChild);
+            }
+            else
+            {
+                object.element.appendChild(this.element);
+            }
+        }
+        else
+        {
+            if(object.firstChild)
+            {
+                object.insertBefore(this.element, object.firstChild);
+            }
+            else
+            {
+                object.appendChild(this.element);
+            }
         }
         return this
     }
