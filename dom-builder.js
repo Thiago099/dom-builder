@@ -143,12 +143,7 @@ class el{
     }
     event(event, callback)
     {
-        const callbackFunction = (e) => callback(e,remove);
-        const remove = () =>
-        {
-            this.element.removeEventListener(event, callbackFunction);
-        }
-        this.element.addEventListener(event, callbackFunction);
+        this.element.addEventListener(event, callback);
         return this
     }
     property(name, value)
