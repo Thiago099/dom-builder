@@ -143,6 +143,8 @@ Make properties defined as reactive by being an arrow function update when this 
 obj.effect(data)
 ```
 
+makes a input element in sync with a variable (effect is needed if you want the input to be changed when you change the variable)
+
 ```js
 function get()
 {
