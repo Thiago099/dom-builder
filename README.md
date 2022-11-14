@@ -1,15 +1,15 @@
 # doom-builder
 
 ## Necessity
-this packge is made to make it easier to create dom elements by hand and also make it reactive.
+This package is made to make it easier to create dom elements by hand and also make it reactive.
 
 ## Basic undesthanding
-it exports two methods element and effect.
-element is used to create html elements and effect creates a object to enable reactivity.
+It exports two methods element and effect.
+The element is used to create HTML elements and effect creates an object to enable reactivity.
 
 ## How it works
 
-the element method returns a class that uses the builder design pattern to create a html element
+The element method returns a class that uses the builder design pattern to create an html element
 
 ## Examples
  
@@ -79,13 +79,13 @@ export default function EditableTitle(text = "Hello world")
 ## Documentation
 ### method element
 
-this creates a html element and provides a class with the following methods using the builder design pattern
+This creates an html element and provides a class with the following methods using the builder design pattern
 
 ```js
 const obj = element("div")
 ```
 
-append this object to a parent element (can be used with either html elements or this lib elements)
+Append this object to a parent element (can be used with either html elements or this lib elements)
 
 ```js
 obj.parent(document.body)
@@ -129,7 +129,7 @@ removes the element from dom
 obj.remove()
 ```
 
-make propertis defined as reactive by beeng a arrow function update when this object is changed
+Make properties defined as reactive by being an arrow function update when this object is changed
 
 ```js
 obj.effect(data)
@@ -149,13 +149,13 @@ obj.model(get,set)
 
 ### method effect
 
-takes in object and returns a proxy that once change will affect the screen
+Takes in object and returns a proxy that once change will affect the screen
 
 ```js
 const data = effect({count: 0})
 ```
 
-as long as the element have a effect poiting to the object and the property is a arrow function instead of text
+As long as the element has an effect pointing to the object and the property is an arrow function instead of text
 
 ```js
 element("button")
