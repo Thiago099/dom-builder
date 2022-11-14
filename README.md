@@ -79,6 +79,74 @@ export default function EditableTitle(text = "Hello world")
 ## Documentation
 ### method element
 
+this creates a html element and provides a class with the following methods using the builder design pattern
+
+```js
+const obj = element("div")
+```
+
+append this object to a parent element (can be used with either html elements or this lib elements)
+
+```js
+obj.parent(document.body)
+```
+
+sets the inner html 
+
+```js
+obj.html("Hello world")
+```
+
+sets the class
+
+```js
+obj.class("card")
+
+obj.class("card",false) // remove the class or set the class visible if the function is true
+```
+
+adds a event listner
+
+```js
+obj.event("click", e => alert("hello"))
+```
+
+sets a property
+
+```js
+obj.property("src","img.jpg")
+```
+
+sets a style
+
+```js
+obj.style("background-color","red")
+```
+
+removes the element from dom
+
+```js
+obj.remove()
+```
+
+make propertis defined as reactive by beeng a arrow function update when this object is changed
+
+```js
+obj.effect(data)
+```
+
+```js
+function get()
+{
+    return data.text
+}
+function set(value)
+{
+    data.text = value
+}
+obj.model(get,set)
+```
+
 ### method effect
 
 takes in object and returns a proxy that once change will affect the screen
