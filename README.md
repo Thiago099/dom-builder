@@ -47,6 +47,11 @@ export default function CounterButton()
 }
 ```
 
+live preview of the examples:
+https://thiago099.github.io/dom-builder-example/
+source code:
+https://github.com/Thiago099/dom-builder-example
+
 ### A title that is in sync with the contents of a input
 
 ![image](https://user-images.githubusercontent.com/66787043/201551381-0963022e-66d9-46d7-a241-7f4a0560b3fb.png)
