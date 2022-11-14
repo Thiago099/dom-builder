@@ -9,7 +9,7 @@ element is used to create html elements and effect creates a object to enable re
 
 ## How it works
 
-the element method returns a class that uses the builder design pattern to modify the html element
+the element method returns a class that uses the builder design pattern to create a html element
 
 ## Examples
  
