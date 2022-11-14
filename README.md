@@ -60,7 +60,7 @@ https://github.com/Thiago099/dom-builder-example
 ![image](https://user-images.githubusercontent.com/66787043/201551381-0963022e-66d9-46d7-a241-7f4a0560b3fb.png)
 
 ``` js
-import { element, effect } from "@thiago-kaique/doom-builder";
+import { element, effect } from "@thiago-kaique/dom-builder";
 export default function EditableTitle(text = "Hello world")
 {
     const data = effect({text})
