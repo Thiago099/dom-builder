@@ -1,18 +1,18 @@
 {
-  "name": "@thiago-kaique/doom-builder",
+  "name": "@thiago-kaique/dom-builder",
   "version": "1.0.0",
   "description": "",
-  "main": "doom-builder.js",
+  "main": "dom-builder.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Thiago099/doom-builder.git"
+    "url": "git+https://github.com/Thiago099/dom-builder.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Thiago099/doom-builder/issues"
+    "url": "https://github.com/Thiago099/dom-builder/issues"
   },
-  "homepage": "https://github.com/Thiago099/doom-builder#readme",
+  "homepage": "https://github.com/Thiago099/dom-builder#readme",
   "dependencies": {
     "observable-slim": "^0.1.6"
   }

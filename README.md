@@ -1,4 +1,4 @@
-# doom-builder
+# dom-builder
 
 ## Necessity
 this packge is made to make it easier to create dom elements by hand and also make it reactive.
