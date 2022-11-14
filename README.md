@@ -76,3 +76,24 @@ export default function EditableTitle(text = "Hello world")
     return main
 }
 ```
+## Documentation
+### method element
+
+### method effect
+
+takes in object and returns a proxy that once change will affect the screen
+
+```js
+const data = effect({count: 0})
+```
+
+as long as the element have a effect poiting to the object and the property is a arrow function instead of text
+
+```js
+element("button")
+ .effect(data)
+ .html(() => `Count is: ${data.count}`)
+```
+
+
+
