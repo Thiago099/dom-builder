@@ -47,12 +47,8 @@ class el{
     {
         if(isReactive)
         {
-            const main = () =>
-            {
-                callback()
-            }
-            main()
-            this.events.push(main)
+            callback()
+            this.events.push(callback)
         }
         else
         {
